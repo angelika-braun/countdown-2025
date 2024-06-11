@@ -1,0 +1,77 @@
+/* bellota-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../countdown-2025/templates/bellota-v16-latin/bellota-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  * { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+      font-family: 'Bellota';
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      /*background: linear-gradient(135deg, #6dd5ed, #2193b0); */
+      background-image: url(./templates/sylvester-1040633_1920.jpg);
+      background-position: center;
+      background-size: cover;
+    
+      background-repeat: no-repeat;
+      color: white;
+    }
+  
+  h1 {
+    font-size: 3rem;
+  
+  }
+  
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+    #countdown {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px 60px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    
+    #timer {
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+    
+    .timer-unit {
+      font-size: 1.5rem;
+      /*text-transform: uppercase;*/
+      letter-spacing: 2px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      display: block;
+    }
+  
+    @media (max-width: 600px) {
+      h1, h2 {
+        font-size: 2rem;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      #timer {
+          font-size: 1rem;
+      }
+      .timer-unit {
+          font-size: 1rem;
+      }
+    }
